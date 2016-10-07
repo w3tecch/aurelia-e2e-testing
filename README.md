@@ -20,7 +20,7 @@ Integration tests are performed with [Protractor](http://angular.github.io/protr
 2. Install the necessary webdriver (this is done automatically with gulp e2e)
 
   ```shell
-  gulp webdriver-update
+  npm run pree2e
   ```
 
 3. Configure the path to the webdriver by opening the file ```protractor.conf.js``` and adjusting the ```seleniumServerJar``` property. Typically its only needed to adjust the version number.
@@ -28,11 +28,11 @@ Integration tests are performed with [Protractor](http://angular.github.io/protr
 4. In another console run the E2E-Tests
 
   ```shell
-  gulp e2e
+  npm run e2e
   ```
 
 5. You can set the protractor baseUrl with environmental variable E2E_URL or like this (default is http://localhost:9000)
 
   ```shell
-  gulp e2e -- --baseUrl http://localhost:3000
+  npm run e2e -- --baseUrl http://localhost:3000
   ```
