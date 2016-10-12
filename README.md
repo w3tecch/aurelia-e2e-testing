@@ -36,3 +36,20 @@ Integration tests are performed with [Protractor](http://angular.github.io/protr
   ```shell
   npm run e2e -- --baseUrl http://localhost:3000
   ```
+
+## A word on angularJS
+To make angular work with this repository just remove the aurelia plugin in ```protractor.conf.js``` and replace ```loadAndWaitForAureliaPage``` with ```get``` in file ```demo.spec.js```.
+This is already enough for AngularJS 1 to work.
+
+If you like to run AngularJS 2 apps, you need to add the following to your ```protractor.conf.js``` in addition:
+  ```
+  onPrepare: function() {
+    browser.ignoreSynchronization = true;
+  },
+
+  useAllAngular2AppRoots: true
+  ```
+
+## Other Framework
+If you like to play around with other frameworks, you could use the following site containing sample apps for testing proposes:
+- http://todomvc.com/
