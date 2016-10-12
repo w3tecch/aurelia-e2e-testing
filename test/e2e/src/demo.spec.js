@@ -10,6 +10,6 @@ describe('aurelia skeleton app', function() {
   });
 
   it('should load the page and display the initial page title', () => {
-    expect(poSkeleton.getCurrentPageTitle()).toBe('Google');
+    expect(poSkeleton.getCurrentPageTitle()).toContain('My Title');
   });
 });
