@@ -1,17 +1,29 @@
 {
   "name": "aurelia-e2e-testing",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "description": "A starter kit for testing Aurelia apps with protractor.",
   "keywords": [
     "aurelia",
     "e2e"
   ],
   "license": "CC0-1.0",
-  "author": "David Weber <david.weber@w3tec.com>",
+  "author": "w3tec <info@w3tec.ch> (http://w3tec.ch/)",
+  "contributors": [
+    {
+      "name": "Gery Hirschfeld <gery.hirschfeld@w3tec.ch> (https://github.com/hirsch88)"
+    },
+    {
+      "name": "David Weber <david.weber@w3tec.ch> (https://github.com/dweber019)"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation"
+    "url": "https://github.com/w3tecch/aurelia-e2e-testing"
   },
+  "bugs": {
+    "url": "https://github.com/w3tecch/aurelia-e2e-testing/issues"
+  },
+  "homepage": "https://github.com/w3tecch/aurelia-e2e-testing#readme",
   "scripts": {
     "pree2e": "gulp webdriver-update",
     "e2e": "gulp e2e"
